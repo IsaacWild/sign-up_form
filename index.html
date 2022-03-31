@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="bodyWrapper">
@@ -21,7 +22,8 @@
           <span class="logoText">SPEAKING</span>
         </div>
         <div class="footer">
-          Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/s/photos/frost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          Photo by <a href="https://unsplash.com/@navi_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Navi</a> on <a href="https://unsplash.com/t/textures-patterns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
   
         </div>
       </div>
@@ -34,45 +36,47 @@
         </div>
         <div class="formMain">
           <div class="formMainTitle">
-            <form action="" method="get" class="form-example">
-              <p>Let's do this!</p>
+            <form action="#" method="get" class="form-example" id="form1">
+              <fieldset>
+                <p>Let's do this!</p>
               <div class="formMainName">
                 <ul>
                   <li><label for="first_name">FIRST NAME:</label></li>
-                  <li><input type="text" id="first_name" name="first_name"></li>
+                  <li><input type="text" id="first_name" name="first_name" autocomplete="off" required></li>
                 </ul>
                 <ul>
                   <li><label for="last_name">LAST NAME:</label></li>
-                  <li><input type="text" id="last_name" name="last_name"></li>
+                  <li><input type="text" id="last_name" name="last_name" autocomplete="off" required></li>
                 </ul>
               </div>
               <div class="formMainContact">
                 <ul>
                   <li><label for="email">EMAIL:</label></li>
-                  <li><input type="email" id="email" name="email"></li>
+                  <li><input type="email" id="email" name="email" autocomplete="off" required></li>
                 </ul>
                 <ul>
                   <li><label for="phone_number">PHONE NUMBER:</label></li>
-                  <li><input type="tel" id="phone_number" name="phone_number"></li>
+                  <li><input type="tel" id="phone_number" name="phone_number" autocomplete="off" required></li>
                 </ul>
               </div>
               <div class="formMainPassword">
                 <ul>
                   <li><label for="password">PASSWORD:</label></li>
-                  <li><input type="password" id="password" name="password"></li>
+                  <li><input type="password" id="password" name="password" autocomplete="off" placeholder="Enter a password" required></li>
                 </ul>
                 <ul>
                   <li><label for="confirm_password">CONFIRM PASSWORD:</label></li>
-                  <li><input type="password" id="confirm_password" name="confirm_password"></li>
+                  <li><input type="password" id="confirm_password" name="confirm_password" autocomplete="off" title="*Your password doesn't match" placeholder="Enter a password" required></li>
                 </ul>
               </div>
+              </fieldset>
             </form>
         </div>
       </div>
-<!--         may need to include below within form or set button to complete form outside of form -->
+
       <div class="formFooter">
         <div class="formFooterButtonWrapper">
-          <input type="button" value="Create Account">
+          <input type="submit" value="Create Account" form="form1">
         </div>
         <div class="formFooterTextWrapper">
           <p class="formFooterText">

@@ -1,6 +1,6 @@
 :root{
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   
 }
 p{
@@ -8,35 +8,58 @@ p{
 }
 ul{
   list-style-type: none;
+  padding: 0;
+  margin-left: 2em;
 }
-input[type=button]{
+fieldset{
+  border: none;
+}
+input[type=submit]{
   -webkit-appearance: none;
   appearance: none;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: bold;
   padding: 0.8em;
   border-radius: 8px;
   background-color: #596D48;
   border: none;
   box-shadow: 2px 2px 2px #acacac;
   color: white;
+  width: clamp(20vw, 30vw, 50vw);
+  cursor: pointer;
 }
 input[type=text],[type=password],[type=email],[type=tel]{
+  -webkit-appearance: none;
   width: clamp(20vw, 250px, 40vw);
-  height: 1.8em;
+  height: 2.5em;
   padding: 0;
   margin-top: 3px;
   box-sizing: border-box;
   border: #E5E7EB solid 2px;
   border-radius: 3px;
+  outline: none;
 }
-input:focus{
-  border: rgba(45,45,255,0.3) solid 2px;
+.formMain input:focus{
+  border: rgb(0, 0, 255) solid 2px;
   box-shadow: 4px 4px 4px rgba(45,45,255,0.3);
 }
+.formMainPassword input:placeholder-shown{
+  border: #E5E7EB solid 2px;
+}
+
 body{
  margin: 0; 
 }
+.sideBar a{
+  text-decoration:white underline;
+  color: white;
+}
+.formFooter a{
+  color: #596D48;
+  text-decoration: none;
+}
+
 .bodyWrapper{
   display: flex;
 }
@@ -45,8 +68,10 @@ body{
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  width: clamp(330px, 40vw, 50vw);
-  background-image: url("https://replit.com/@IsaacWild1/sign-upform#sidebar_background.jpg");
+  width: clamp(25px, 40vw, 50vw);
+  background: url("background.jpg");
+  background-size: cover;
+  background-position: center;
   background-color: #74d19e;
   color:white;
   
@@ -86,7 +111,7 @@ body{
 }
 .formMainName{
   display: flex;
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 .formMainContact{
   display: flex;
@@ -97,4 +122,10 @@ body{
 }
 .formFooterButtonWrapper{
   margin-left: 2em;
+}
+.formMainTitle p{
+  display: flex;
+  margin: 2rem 0rem 1rem 2rem;
+  font-size: 18px;
+  font-weight: bold;
 }
