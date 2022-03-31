@@ -1,4 +1,100 @@
+:root{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  
+}
+p{
+  margin: 2em 2em;
+}
+ul{
+  list-style-type: none;
+}
+input[type=button]{
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 0.8em;
+  border-radius: 8px;
+  background-color: #596D48;
+  border: none;
+  box-shadow: 2px 2px 2px #acacac;
+  color: white;
+}
+input[type=text],[type=password],[type=email],[type=tel]{
+  width: clamp(20vw, 250px, 40vw);
+  height: 1.8em;
+  padding: 0;
+  margin-top: 3px;
+  box-sizing: border-box;
+  border: #E5E7EB solid 2px;
+  border-radius: 3px;
+}
+input:focus{
+  border: rgba(45,45,255,0.3) solid 2px;
+  box-shadow: 4px 4px 4px rgba(45,45,255,0.3);
+}
 body{
-    background-color: antiquewhite;
-    color: red;
+ margin: 0; 
+}
+.bodyWrapper{
+  display: flex;
+}
+.sideBar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: clamp(330px, 40vw, 50vw);
+  background-image: url("https://replit.com/@IsaacWild1/sign-upform#sidebar_background.jpg");
+  background-color: #74d19e;
+  color:white;
+  
+}
+.footer{
+  height: 1rem;
+  position: relative;
+  margin-top: auto;
+  padding: 0.5em;
+  font-size: 0.7rem;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20%;
+  font-size: 46px;
+  font-family: 'Permanent Marker', cursive;
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+}
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f9f9;
+  margin: 2em, 0;
+}
+.formMain{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 3px 8px #aaaaaa;
+}
+.formFooter{
+  margin-top: 3em;
+}
+.formMainName{
+  display: flex;
+  margin-top: 1em;
+}
+.formMainContact{
+  display: flex;
+}
+.formMainPassword{
+  display: flex;
+  margin-bottom: 1.5em;
+}
+.formFooterButtonWrapper{
+  margin-left: 2em;
 }

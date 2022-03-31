@@ -4,10 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    test
+    <div class="bodyWrapper">
+      <div class="sideBar">
+        <div class="logo">
+          <span class="logoText">♕CROWN</span>
+          <span class="logoText">SPEAKING</span>
+        </div>
+        <div class="footer">
+          Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/s/photos/frost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+        </div>
+      </div>
+      <div class="formWrapper">
+        <div class="formHeader">
+          <p>
+            This is not a real online service! You know you need somthring like this in your life to help you realize your deepest dreams.<br>Sign up <span><em>now</em> to get started.</span>
+          </p>
+          <p>You <span><em>know</em></span> you want to.</p>
+        </div>
+        <div class="formMain">
+          <div class="formMainTitle">
+            <form action="" method="get" class="form-example">
+              <p>Let's do this!</p>
+              <div class="formMainName">
+                <ul>
+                  <li><label for="first_name">FIRST NAME:</label></li>
+                  <li><input type="text" id="first_name" name="first_name"></li>
+                </ul>
+                <ul>
+                  <li><label for="last_name">LAST NAME:</label></li>
+                  <li><input type="text" id="last_name" name="last_name"></li>
+                </ul>
+              </div>
+              <div class="formMainContact">
+                <ul>
+                  <li><label for="email">EMAIL:</label></li>
+                  <li><input type="email" id="email" name="email"></li>
+                </ul>
+                <ul>
+                  <li><label for="phone_number">PHONE NUMBER:</label></li>
+                  <li><input type="tel" id="phone_number" name="phone_number"></li>
+                </ul>
+              </div>
+              <div class="formMainPassword">
+                <ul>
+                  <li><label for="password">PASSWORD:</label></li>
+                  <li><input type="password" id="password" name="password"></li>
+                </ul>
+                <ul>
+                  <li><label for="confirm_password">CONFIRM PASSWORD:</label></li>
+                  <li><input type="password" id="confirm_password" name="confirm_password"></li>
+                </ul>
+              </div>
+            </form>
+        </div>
+      </div>
+<!--         may need to include below within form or set button to complete form outside of form -->
+      <div class="formFooter">
+        <div class="formFooterButtonWrapper">
+          <input type="button" value="Create Account">
+        </div>
+        <div class="formFooterTextWrapper">
+          <p class="formFooterText">
+            Already have an account? <a href="">Log in</a>
+          </p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
